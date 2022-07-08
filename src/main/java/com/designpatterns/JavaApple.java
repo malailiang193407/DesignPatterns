@@ -25,4 +25,13 @@ public class JavaApple implements IFruit{
     public Double getPrice() {
         return this.price;
     }
+
+    @Override
+    public String toString() {
+        return "JavaApple{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
