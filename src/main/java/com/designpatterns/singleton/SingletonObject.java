@@ -1,6 +1,8 @@
 package com.designpatterns.singleton;
 
-public class SingletonObject {
+import java.io.Serializable;
+
+public class SingletonObject implements Serializable {
 
     private volatile static SingletonObject singletonObject = null;
 
@@ -22,5 +24,10 @@ public class SingletonObject {
             }
         }
         return singletonObject;
+    }
+
+    public Object readResolve(){
+        System.out.println("调用了readResolve方法");
+        return  singletonObject;
     }
 }
