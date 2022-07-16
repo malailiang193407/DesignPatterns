@@ -1,6 +1,6 @@
 package com.designpatterns.decorator.v2;
 
-public class EggJIanBinDecorator extends JtJianBinDecorator{
+public class EggJIanBinDecorator extends JianBinDecorator{
 
     public EggJIanBinDecorator(AJianBin jianBin) {
         super(jianBin);

@@ -7,8 +7,7 @@ public class Test {
     public static void main(String[] args) {
         AJianBin aJianBin = new JtJianBin();
         aJianBin = new EggJIanBinDecorator(aJianBin);
-        aJianBin =new EggJIanBinDecorator(aJianBin);
-
+        aJianBin = new JtJianBinDecorator(aJianBin);
 
         System.out.println(aJianBin.getDes()+" "+  aJianBin.getJG());
     }
